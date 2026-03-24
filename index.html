@@ -1,6 +1,40 @@
 <!Doctype HTML>
 <html>
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- To Do: Move this to a stylesheet when it gets too big -->
+  <style>
+    body{
+      font-family: "IBM Plex Serif", serif;
+      max-width: 760px;
+      margin: auto;
+      font-size: 16px;
+    }
+
+    ul.list-row{
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    ul.list-row li{
+      padding: .25em .5em;
+      border: 1px solid;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin: 0 1em .5em 0;
+    }
+    .skills-header, .experience-header{
+      border-bottom: 2px dotted;
+    }
+
+    .experience-body .role{
+      border-bottom: 1px dotted
+    }
+  </style>
 </head>
 
 <body>
@@ -20,17 +54,19 @@
     </div>
     <div class="skills-body">
       <h3>Primary</h3>
-      <ul>
+      <ul class="list-row">
         <li>C#</li>
         <li>PHP</li>
         <li>MySQL</li>
+        <li>Python</li>
         <li>TypeScript/Node.js</li>
         <li>MongoDb</li>
         <li>React</li>
+        <li>C</li>
       </ul>
 
       <h3>Additional</h3>
-      <ul>
+      <ul class="list-row">
         <li>Strategic Planning</li>
         <li>SOLID principles</li>
         <li>Linux CLI</li>
@@ -49,7 +85,7 @@
             <h4>truDigital Signage &mdash; <em>Head of R&D</em></h4>
             <p>November 2019 &mdash; Present</p>
           </div>
-          <div> 
+          <div class="role-description">
             <ul>
               <li>Communicate with the Business stakeholders to report on Project status, risks, and roadmaps</li>
               <li>Architect and implement new enterprise platform infrastructure using C# and TypeScript</li>
@@ -65,7 +101,7 @@
             <h4>truDigital Signage &mdash; <em>Software Engineer</em></h4>
             <p>June 2016 &mdash; November 2019</p>
           </div>
-          <div>
+          <div class="role-description">
             <ul>
               <li>Help architect the new version of the software using a MERN stack.</li>
               <li>Work with the team to develop a REST API setup for our backend</li>
@@ -80,7 +116,7 @@
             <h4>Jive Commerce &mdash; <em>Developer</em></h4>
             <p>November 2014 &mdash; May 2016</p>
           </div>
-          <div>
+          <div class="role-description">
             <ul>
               <li>Develop Sites for clients, including custom plugin and theme development.</li>
               <li>Coordinate with project managers and clients to develop and implement the solutions. </li>
